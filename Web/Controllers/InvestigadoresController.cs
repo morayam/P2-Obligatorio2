@@ -70,7 +70,7 @@ namespace Web.Controllers
         {
             try
             {
-                if (string.IsNullOrEmpty(email)) throw new Exception("Debe ingresar email");
+                if (string.IsNullOrEmpty(email)) throw new Exception("Debe ingresar un email");
                 if (string.IsNullOrEmpty(password)) throw new Exception("Debe ingresar una contraseña");
                 if (string.IsNullOrEmpty(nombre)) throw new Exception("Debe ingresar un nombre");
                 miSistema.AltaInvestigador(new Investigador(email, password, nombre, Rol.DETECTIVE));
